@@ -1,0 +1,23 @@
+place-player-teleports:
+  world: world
+  x: 0.0
+  y: 64.0
+  z: 0.0
+  yaw: 0.0
+  pitch: 0.0
+
+Rewards:
+  reward1:
+    command: "give %player% diamond 1"
+    message-after-teleport-back: "&aCongratulations! You won a diamond!"
+    chance-rate: 1.0
+  reward2:
+    command: "give %player% iron_ingot 16"
+    message-after-teleport-back: "&eCongratulations! You won 16 iron ingots!"
+    chance-rate: 0.5
+
+Ticket-items:
+  item: PAPER
+  custom-model-data: 1
+  blindness-effect: true
+  item-name: "&6&lLottery Ticket"
