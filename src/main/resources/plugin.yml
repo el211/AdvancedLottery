@@ -1,0 +1,5 @@
+name: AdvancedLottery
+version: '${project.version}'
+main: me.afelia.advancedlottery.AdvancedLottery
+api-version: '1.20'
+load: STARTUP
