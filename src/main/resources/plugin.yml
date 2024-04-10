@@ -1,5 +1,22 @@
 name: AdvancedLottery
-version: '${project.version}'
-main: me.afelia.advancedlottery.AdvancedLottery
+version: 1.0
+author: Elias
 api-version: '1.20'
-load: STARTUP
+description: A lottery plugin that teleports players to a special location upon using a lottery ticket.
+
+main: me.afelia.advancedlottery.AdvancedLottery
+
+commands:
+  advancedlottery:
+    description: Main command for AdvancedLottery plugin
+    usage: /advancedlottery <get|give> [player]
+    permission: advancedlottery.use
+    aliases: [alottery]
+
+permissions:
+  advancedlottery.give:
+    description: Allows the player to give lottery tickets to other players.
+    default: op
+  advancedlottery.use:
+    description: Allows the player to use AdvancedLottery commands.
+    default: true
