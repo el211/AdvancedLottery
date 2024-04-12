@@ -33,6 +33,3 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 
 This plugin is licensed under the MIT License. 
 
----
-
-Feel free to customize this template according to your plugin's specific details and features. Let me know if you need further assistance!
