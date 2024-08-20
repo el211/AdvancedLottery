@@ -159,11 +159,12 @@ public class AdvancedLottery extends JavaPlugin implements Listener {
     @EventHandler
     public void onPlayerMove(PlayerMoveEvent event) {
         Player player = event.getPlayer();
-        if (player.getGameMode() == GameMode.SPECTATOR) {
-            // Cancel the event to prevent movement while in spectator mode
-            event.setCancelled(true);
+        // Check if the player is in animation mode and in spectator mode
+        if (player.getGameMode() == GameMode.SPECTATOR && playerInAnimation.getOrDefault(player.getUniqueId(), false)) {
+            event.setCancelled(true); // Prevent movement only if they are in animation mode
         }
     }
+
 
     @EventHandler
     public void onChat(AsyncPlayerChatEvent event) {
